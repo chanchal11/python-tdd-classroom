@@ -7,8 +7,11 @@ class StringExercise:
         """
         Reverses order of characters in string input_str.
         """
-        
-        return None
+        input_str = str(input_str)
+        return_str = str()
+        for i in range(len(input_str)-1,-1,-1):
+            return_str = return_str + input_str[i]
+        return return_str
 
     def is_english_vowel(self, character):
         """
@@ -54,8 +57,3 @@ class StringExercise:
         for i in range(0,len(words)):
             lengths.append(len(words[i]))
         return lengths
-
-print(StringExercise().is_english_vowel('Z'))
-print(StringExercise().is_english_vowel('a'))
-print(StringExercise().find_longest_word('aa bbbcc eee'))
-print(StringExercise().get_word_lengths('aa bbbcc eee'))

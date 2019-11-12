@@ -11,6 +11,3 @@ def count_digits(number):
         number = number / 10
         sum = sum + (number % 10)
     return sum
-
-print(count_digits(123))
-print(reverse_list([1,2,3,4,5,6]))
